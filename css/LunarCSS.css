@@ -253,6 +253,18 @@ footer div{
 	font-size: 50px;
 }
 
+#NewGame{
+	width: 98%;
+	height: 500px;
+	background-image: url("../img/NewGame.png");
+	border: 1% solid black;
+	border-radius: 50px;
+	margin: 1%;
+	background-position: center;
+	background-size: cover;
+	font-size: 50px;
+}
+
 
 
 /* SCROLLBAR */
