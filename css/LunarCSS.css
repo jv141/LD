@@ -12,6 +12,10 @@
   font-family: LunarFont;
 }
 
+#VIDPLAYER{
+  border: 1px solid black;
+}
+
 #markk{
 
   width: 60px;

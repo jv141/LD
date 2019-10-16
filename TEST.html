@@ -16,6 +16,201 @@
 
 
 
+  <style>
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  resize: both;
+overflow: auto;
+
+}
+a{
+font-family: Goog;
+}
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+  resize: both;
+overflow: auto;
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-weight: bold;
+margin-top: -17px;
+  font-size: 49px;
+font-family:Goog;
+background-color: DarkRed;
+
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+/* Modal Header */
+.modal-header {
+  background-color: DarkRed;
+  color: white;
+  display: block;
+}
+
+/* Modal Body */
+.modal-body {padding: 2px 16px;}
+
+/* Modal Footer */
+.modal-footer {
+  background-color: DarkRed;
+  color: white;
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #100806;
+  margin: auto;
+  padding: 0;
+  border: 1px solid Black;
+  width: 80%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  animation-name: animatetop;
+  animation-duration: 0.4s
+  position: absolute
+}
+
+/* Add Animation */
+@keyframes animatetop {
+  from {top: -300px; opacity: 0}
+  to {top: 0; opacity: 1}
+}
+.myBtn {
+display: inline-block;
+padding: 15px 25px;
+font-size: 24px;
+cursor: pointer;
+text-align: center;
+text-decoration: none;
+outline: none;
+color: #fff;
+border: none;
+border-radius: 15px;
+box-shadow: 0 9px #999;
+  margin-right:auto;
+  margin-left:auto;
+display: block;
+  background-color: red;
+}
+
+.myBtn:hover {background-color: DarkRed}
+
+.myBtn:active {
+background-color: DarkRed;
+box-shadow: 0 5px #666;
+transform: translateY(4px);
+}
+  #bob {
+  color:white;
+border-radius:  40px;
+padding: 15px 32px;
+text-align: center;
+text-decoration: none;
+font-size: 16px;
+cursor: url(http://www.rw-designer.com/cursor-extern.php?id=128483),auto;
+}
+#bob:hover {
+padding: 15px 32px;
+background-color: DarkGrey;
+color: white;
+text-align: center;
+text-decoration: none;
+font-size: 16px;
+cursor: url(http://www.rw-designer.com/cursor-extern.php?id=128483),auto;
+}
+#bob:active {
+padding: 15px 32px;
+background-color: DarkGrey;
+color: white;
+text-align: center;
+text-decoration: none;
+cursor: url(http://www.rw-designer.com/cursor-extern.php?id=128483),auto;
+}
+body {
+background-color:Grey;
+}
+
+p{
+font-family:Goog;
+font-size:20;
+}
+h2#henk{
+background-color: DarkRed;
+font-size: 20px;
+color: white;
+}
+.w3-text-green, .w3-hover-text-green:hover{
+font-family:Goog;
+}
+.bob {
+display: inline-block;
+border-radius: 25px;
+background-color: DarkGrey;
+border: none;
+color: white;
+text-align: center;
+font-size: 28px;
+padding: 20px;
+width: 200px;
+transition: all 0.5s;
+cursor: url(http://www.rw-designer.com/cursor-extern.php?id=128483),auto;
+margin: 5px;
+}
+
+.bob span {
+cursor: url(http://www.rw-designer.com/cursor-extern.php?id=128483),auto;
+display: inline-block;
+position: relative;
+transition: 0.5s;
+}
+
+.bob span:after {
+content: '\00bb';
+position: absolute;
+opacity: 0;
+top: 0;
+right: -20px;
+transition: 0.5s;
+}
+
+.bob:hover span {
+padding-right: 25px;
+}
+
+.bob:hover span:after {
+opacity: 1;
+right: 0;
+}
+.bob active{
+background-color: DarkRed;
+}
+  </style>
+
+
+
 </head>
 
   <body>
@@ -57,6 +252,113 @@
           <marquee id="marque"> NEW! TEST TEST 1 2 3 TEST TEST NOT OLD! </marquee>
         </div>
 
+        <!-- Trigger/Open The Modal -->
+        <button id="myBtn" class="myBtn">Open Random Vid Player</button>
+
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+        <div class="modal-header">
+        <span class="close" title="sluit" style="
+        color: black;
+        ">×</span>
+        <font face="sans"><h2 id="henk"  style="text-align: center;" >Lunar Vid Player :P (pause video before closing this thing if you want to stop the music)</h2></font>
+        </div>
+        <div class="modal-body">
+
+        <iframe src="https://www.youtube.com/embed/videoseries?list=PLHNV6EJwXEo6mLx0Gmw_BpqS4XTpRJ0-c" width="100%" height="600px" id="VIDPLAYER"></iframe>
+
+
+        </div>
+
+
+
+
+
+        <div class="modal-footer">
+        <h3></h3>
+        </div>
+        </div>
+        </div>
+
+
+        <script>
+
+        dragElement(document.getElementById("myModal"));
+
+        function dragElement(elmnt) {
+          var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
+          if (document.getElementById(elmnt.id + "header")) {
+            // if present, the header is where you move the DIV from:
+            document.getElementById(elmnt.id + "header").onmousedown = dragMouseDown;
+          } else {
+            // otherwise, move the DIV from anywhere inside the DIV:
+            elmnt.onmousedown = dragMouseDown;
+          }
+
+          function dragMouseDown(e) {
+            e = e || window.event;
+            e.preventDefault();
+            // get the mouse cursor position at startup:
+            pos3 = e.clientX;
+            pos4 = e.clientY;
+            document.onmouseup = closeDragElement;
+            // call a function whenever the cursor moves:
+            document.onmousemove = elementDrag;
+          }
+
+          function elementDrag(e) {
+            e = e || window.event;
+            e.preventDefault();
+            // calculate the new cursor position:
+            pos1 = pos3 - e.clientX;
+            pos2 = pos4 - e.clientY;
+            pos3 = e.clientX;
+            pos4 = e.clientY;
+            // set the element's new position:
+            elmnt.style.top = (elmnt.offsetTop - pos2) + "px";
+            elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
+          }
+
+          function closeDragElement() {
+            // stop moving when mouse button is released:
+            document.onmouseup = null;
+            document.onmousemove = null;
+          }
+        }
+
+        </script>
+
+
+        		<script>
+        		// Get the modal
+        var modal = document.getElementById('myModal');
+
+        // Get the button that opens the modal
+        var btn = document.getElementById("myBtn");
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+
+        // When the user clicks on the button, open the modal
+        btn.onclick = function() {
+            modal.style.display = "block";
+        }
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() {
+            modal.style.display = "none";
+        }
+
+        // When the user clicks anywhere outside of the modal, don't close it
+        <!-- window.onclick = function(event) { -->
+            <!-- if (event.target == modal) { -->
+                <!-- modal.style.display = "none"; -->
+            <!-- } -->
+        <!-- } -->
+        		</script>
 
     </div>
 
