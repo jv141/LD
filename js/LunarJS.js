@@ -1,24 +1,55 @@
-var pattern = ['ArrowUp', 'ArrowUp', 'ArrowDown', 'ArrowDown', 'ArrowLeft', 'ArrowRight', 'ArrowLeft', 'ArrowRight', 'b', 'a'];
-var current = 0;
 
-var keyHandler = function (event) {
+	// a key map of allowed keys
+    var allowedKeys = {
+      37: 'left',
+      38: 'up',
+      39: 'right',
+      40: 'down',
+      65: 'a',
+      66: 'b'
+    };
 
-	// If the key isn't in the pattern, or isn't the current key in the pattern, reset
-	if (pattern.indexOf(event.key) < 0 || event.key !== pattern[current]) {
-		current = 0;
-		return;
-	}
+    // the 'official' Konami Code sequence Change this to you code
+    var konamiCode = ['up', 'up', 'down', 'down', 'left', 'right', 'left', 'right', 'b', 'a'];
 
-	// Update how much of the pattern is complete
-	current++;
+    // a variable to remember the 'position' the user has reached so far.
+    var konamiCodePosition = 0;
 
-	// If complete, alert and reset
-	if (pattern.length === current) {
-		current = 0;
-		window.alert('You found the secret code!  :D');
-	}
+    // add keydown event listener
+    document.addEventListener('keydown', function(e) {
+      // get the value of the key code from the key map
+      var key = allowedKeys[e.keyCode];
+      // get the value of the required key from the konami code
+      var requiredKey = konamiCode[konamiCodePosition];
 
-};
+      // compare the key with the required key
+      if (key == requiredKey) {
 
-// Listen for keydown events
-document.addEventListener('keydown', keyHandler, false);
+        // move to the next key in the konami code sequence
+        konamiCodePosition++;
+
+        // if the last key is reached, activate cheats
+        if (konamiCodePosition == konamiCode.length) {
+          activateCheats();
+          konamiCodePosition = 0;
+        }
+      } else {
+        konamiCodePosition = 0;
+      }
+    });
+
+    function activateCheats() {
+
+      //HERE WHAT WILL HAPPEN
+
+
+  		alert("cheats activated");
+
+      // XTRA CHEATZ
+      		//document.getElementById('ID HIER').innerHTML = 'NEW TEXT;
+
+      	//	var audio = new Audio('BESTAND.mp3');
+      		//audio.play();
+
+
+    }
