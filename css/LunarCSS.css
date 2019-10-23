@@ -6,7 +6,8 @@
 *{
 	margin: 0;
 	/* background-color: #100806; */
-	background-color: #100806;
+ background-color: #100806;
+  /* background-image: url("../img/newbg.jpg"); */
 	color: #8C8C8C;
 	text-align: center;
   font-family: LunarFont;
