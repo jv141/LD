@@ -1,100 +1,93 @@
 <!DOCTYPE html>
+<html lang="en" dir="ltr">
+	<head>
+		<meta charset="utf-8">
+		<link rel="icon" href="img/Lunar_Duck.ico">
+		<title> Lunar Duck - Home </title>
+		<!-- CSS JS POPPER.js jQuerry -->
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+		<link rel="stylesheet" href="css/LunarCSS.css">
+		<script src="https://kit.fontawesome.com/e2ab3c5dad.js"></script>
 
-<html lang="en">
+		<script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+		<!-- EIND -->
 
-<head>
-  <meta charset="UTF-8">
-  		<link rel="icon" href="img/Lunar_Duck.ico">
-  <title>Lunar Duck/Home</title>
-
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <link rel="stylesheet" href="css/tether.min.css">
-  <link rel="stylesheet" href="css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/LunarCSS.css">
-  <script src="https://kit.fontawesome.com/e2ab3c5dad.js" crossorigin="anonymous"></script>
-
-
-
-</head>
-
-  <body>
-      <!-- test maar raak -->
-    <!-- NAV  -->
-    <ul class="nav justify-content-center">
-      <li class="nav-item">
-        <a class="nav-link active" href="index.html">Home</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="info.html">Info</a>
-      </li>
-      <li class="nav-item">
-        <div class="dropdown">
-  <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-    Games
+	</head>
+	<body>
+<!--	NAVIGATIE -->
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="BlueNav">
+  <a class="navbar-brand" href="index.html"><img src="img/Lunar_Duck.ico" id="LunarIcon" alt="LunarDuckIcon"> Lunar Duck</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
   </button>
-  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-    <a class="dropdown-item" href="hexa.html">Hexa</a>
-    <a class="dropdown-item" href="DarkBlue.html">DarkBlue</a>
-    <a class="dropdown-item" href="colorshop.html">Color Shop</a>
-    <div class="dropdown-divider"></div>
-    <a class="dropdown-item" href="https://www.technicpack.net/modpack/lunar-duck.1365273" target="_blank">Minecraft Modpack</a>
-  </div>
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav">
+      <a class="nav-item nav-link" href="index.html" style="color: white;" active> Home </a>
+      <a class="nav-item nav-link" href="info.html" style="color: white;" >Info</a>
+			<div class="dropdown">
+<button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+	Games
+</button>
+<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+	<a class="dropdown-item" href="DarkBlue.html">DarkBlue</a>
+	<a class="dropdown-item" href="colorshop.html">Color Shop</a>
+	<div class="dropdown-divider"></div>
+	<a class="dropdown-item" href="https://www.technicpack.net/modpack/lunar-duck.1365273" target="_blank">Minecraft Modpack</a>
 </div>
-      </li>
-    </ul>
-    <!--EIND -->
-
-    <div id="textBlock1">
-        <h1>Welcome to Lunar Duck</h1><br>
-        we are a beginning game dev team<br>
-        we make simple games for education<br>
-        please help us with bugs or give ideas<br>
-        we hope you like our dev site!
+</div>
     </div>
-    <div id="HexaLogo">
-      <div id="full">
+  </div>
+</nav>
+<!--	EIND -->
+		<div class="container">
+			<center>
+				<div id="box">
 
-        <div id="BannerLunarDuckLogo">
-          The Lunar Duck
-        </div>
+					<center> <p id="TitleText">The Lunar Duck </p> </center>
+
+					<div id="BannerLunarDuckLogo">
+					</div>
+
+					<center> <h2> we are a beginning game dev team
+					we make simple games for education
+					please help us with bugs or give ideas
+					we hope you like our dev site!</h2> </center>
+
+				</div>
+			</center>
+		</div>
+
+		<center>
+		<footer>
+			<div id="footer1">
+
+					<h1>Info</h1><br>
+					we are beginning devs trying to learn<br>
+					we make games<br>
+					enjoy!
+			</div>
+			<div id="footer2">
 
 
+			</div>
+			<div id="footer3">
+				<p>
+					<h1>Social</h1><br>
+					<a href="https://discord.gg/rMVxHaa"target="_blank">
+						<i class="fab fa-discord"></i> Discord
+					</a><br>
+					<a href="https://www.instagram.com/thelunarduck/"target="_blank">
+						<i class="fab fa-instagram"></i> Instagram
+					</a><br>
 
-
-      </div>
-    </div>
-    <div class="clearfix"></div>
-    <footer>
-      <div id="footer1">
-
-          <h1>Info</h1><br>
-          we are beginning devs trying to learn<br>
-          we make games<br>
-          enjoy!
-      </div>
-      <div id="footer2">
-
-
-      </div>
-      <div id="footer3">
-        <p>
-          <h1>Social</h1><br>
-          <a href="https://discord.gg/rMVxHaa"target="_blank">
-            <i class="fab fa-discord"></i> Discord
-          </a><br>
-          <a href="https://www.instagram.com/thelunarduck/"target="_blank">
-            <i class="fab fa-instagram"></i> Instagram
-          </a><br>
-
-        </p>
-    </footer>
-
-    <script src="js/jquery-3.2.1.min.js"></script>
-    <script src="js/tether.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/LunarJS.js"></script>
-
-  </body>
-
+				</p>
+		</footer>
+	</center>
+  <script src="js/LunarJS.js"></script>
+	</body>
 </html>
