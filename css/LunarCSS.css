@@ -4,269 +4,216 @@
 }
 
 *{
-	margin: 0;
-	/* background-color: #100806; */
-	background-color: #100806;
-	color: #8C8C8C;
+  font-family: LunarFont;
+}
+
+#TitleText{
+  font-size:35px;
+}
+
+#BlueNav{
+  background-color: DarkBlue !important;
+  border-radius: 0px 0px 25px 25px;
+  margin-bottom: 10px;
+}
+
+a.nav-item nav-link{
+  color: white;
+}
+
+#LunarIcon{
+  height: 50px;
+}
+
+body{
+  background-image: url(../img/newbg.jpg);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#box{
+  /* background-color: Grey; */
+  background: rgba(9, 12, 155, 0.3);
+  border: 1px solid black;
+  border-radius: 25px;
+  margin-top: 20px;
+  color: white;
+}
+
+#box2{
+  /* background-color: Grey; */
+  background: rgba(9, 12, 155, 0.3);
+  border: 1px solid black;
+  border-radius: 25px;
+  margin-top: 20px;
+  color: white;
+  width: 800px;
+}
+
+  #DarkBlue{
+    width: 75%;
+  	height: 500px;
+  	background-image: url("../img/DarkBlue.jpg");
+  	border: 1px solid black;
+  	border-radius: 50px;
+  	margin: 1%;
+  	background-position: center;
+  	background-size: cover;
+  	font-size: 50px;
+    color: white;
+    filter: drop-shadow(2px 4px 6px black)
+  }
+
+  #ColorShop{
+    width: 75%;
+  	height: 500px;
+  	background-image: url("../img/colorshop.png");
+  	border: 1px solid black;
+  	border-radius: 50px;
+  	margin: 1%;
+  	background-position: center;
+  	background-size: cover;
+  	font-size: 50px;
+    color: white;
+    filter: drop-shadow(2px 4px 6px black)
+  }
+
+  #Hekalou{
+    width: 75%;
+  	height: 500px;
+  	background-image: url("../img/NewGame.png");
+  	border: 1px solid black;
+  	border-radius: 50px;
+  	margin: 1%;
+  	background-position: center;
+  	background-size: cover;
+  	font-size: 50px;
+    color: white;
+    filter: drop-shadow(2px 4px 6px black)
+  }
+
+  #BannerLunarDuckLogo{
+  	width: 98%;
+  	height: 500px;
+  	background-image: url("../img/NewBanner.jpg");
+  	border: 1px solid black;
+  	border-radius: 50px;
+  	margin: 1%;
+  	background-position: center;
+  	background-size: cover;
+  	font-size: 50px;
+    color: white;
+    filter: drop-shadow(2px 4px 6px black)
+}
+
+#download{
+  font-size: 50px;
+  background-color: DarkBlue;
+  width: 500px;
+  border-radius: 50px;
+}
+
+
+.dropdown-toggle{
+      color: white;
+}
+.dropdown-toggle:hover{
+      color: white;
+}
+.dropdown-toggle:active{
+      color: white;
+}
+
+
+footer{
+	margin-top: 30px;
+  background-color: DarkBlue !important;
+  height: 175px;
+  border-radius: 25px 25px 0px 0px;
+  color: white;
+  width: 90%;
+}
+
+
+footer div{
+	float: left;
+	width: 29%;
+	margin: 2%;
+	height: 50px;
+  margin-top: 5px;
+}
+
+footer a{
+  color: white;
+}
+footer a:hover{
+  color: white;
+}
+footer a:active{
+  color: white;
+}
+
+#footer3{
+  margin-top: -15px;
+}
+
+#report{
+    color: white;
+}
+
+a{
+  color:white;
+}
+
+a:hover{
+  color: white;
+}
+
+a:active {
+  color:white;
+}
+
+a.dropdown-item{
+  color:white;
+}
+
+.dropdown-divider{
+  color:white;
+}
+
+div.dropdown-menu{
+  background-color: DarkBlue;
+	color: White;
+  text-decoration-color: white;
 	text-align: center;
   font-family: LunarFont;
 }
 
-#VIDPLAYER{
-  border: 1px solid black;
-}
 
-#markk{
-
-  width: 60px;
+#teamLeft {
+	width: 50%;
+  text-align: center;
   margin: auto;
+  float: left;
+}
+#teamRight {
 
+  text-align: center;
+  margin: auto;
+  overflow: auto;
 }
 
 #marque{
   background: white;
   color: black;
   border-radius: 50px;
+  width: 100px;
 }
 
-#whiteline{
-  background-color: white;
-}
-
-.btn{
-  font-family: LunarFont;
-}
-
-a, a:hover, a:active{
-  color: #8C8C8C;
-}
-
-div.dropdown-menu{
-  background-color: #483530;
-	color: White;
-	text-align: center;
-  font-family: LunarFont;
-}
-
-.dropdown-item {
-    display: block;
-    width: 100%;
-    padding: 3px 1.5rem;
-    clear: both;
-    font-weight: 400;
-    color: White;
-    text-align: inherit;
-    white-space: nowrap;
-    background: 0 0;
-    border: 0;
-}
-
-#HexaLogo{
-  padding-top: 1%;
-}
-
-h2{
-	font-size: 12px;
-}
-#download{
-	background-color: green;
-	border-radius: 20px;
-	width: 200px;
-	color: white;
-	padding: 20px 0;
-	margin: auto;
-	text-align: center;
-}
-.clearfix{
-	clear: both;
-}
-
-#textBlock1 {
-
-
-}
-#team p{
-	margin-bottom: 15px;
-}
-.textblockje{
-
-}
-
-
-#imgBlocks{
-	width: 87%;
-	right: 2030px;
-	margin: auto;
-}
-
-#full{
-	width: 100%;
-	height: 530px;
-}
-
-#post1 a{
-	color:#8C8C8C;
-	text-decoration: none;
-}
-#BannerLunarDuckLogo{
-	width: 98%;
-	height: 500px;
-	background-image: url("../img/Lunar_Ducky_banner.png");
-	border: 1% solid black;
-	border-radius: 50px;
-	margin: 1%;
-	background-position: center;
-	background-size: cover;
-	font-size: 50px;
-  color: white;
-}
-.DevBlogBlock{
-	width: 98%;
-	height: 500px;
-	background-image: url("../img/hexaFull.png");
-	border: 1% solid black;
-	border-radius: 50px;
-	margin: 1%;
-	background-position: center;
-	background-size: cover;
-	font-size: 20px;
-}
-#left{
-	float: left;
-	width: 48%;
-	margin: 1%;
-}
-#left1{
-
-}
-#post2{
-	width: 98%;
-	height: 400px;
-	background-image: url("../img/1250x500.png");
-	border: 1% solid black;
-	border-radius: 50px;
-	margin: 1%;
-	background-position: center;
-	background-size: cover;
-}
-#post3{
-	width: 98%;
-	height: 400px;
-	background-image: url("../img/1250x500.png");
-	border: 1% solid black;
-	border-radius: 50px;
-	margin: 1%;
-	margin-top: 50px;
-	background-position: center;
-	background-size: cover;
-}
-#right{
-	float: left;
-	width: 48%;
-	margin: 1%;
-}
-#post4{
-	width: 98%;
-	height: 850px;
-	background-image: url("../img/1250x500.png");
-	border: 1% solid black;
-	border-radius: 50px;
-	margin: 1%;
-	background-position: center;
-	background-size: cover;
-}
-#post5{
-	width: 98%;
-	height: 500px;
-	background-image: url("../img/1250x500.png");
-	border: 1% solid black;
-	border-radius: 50px;
-	margin: 1%;
-	background-position: center;
-	background-size: cover;
-}
-/*  info.html stuff */
-
-#team{
-	font-size: 30px;
-}
-#teamLeft {
-	float: left;
-	width: 50%;
-
-	font-size: 20px;
-}
-#teamRight {
-	float: left;
-	width: 50%;
-
-	font-size: 20px;
-}
-#report{
-	font-size: 15px;
-}
-#contact{
-
-}
-footer{
-	margin-top: 30px;
-}
-footer div{
-	float: left;
-	width: 29%;
-	margin: 2%;
-	height: 50px;
-}
-
-#gameBanner{
-	    padding-top: 1%;
-}
-#post1{
-	width: 98%;
-	height: 500px;
-	background-image: url("../img/hexa/gameBanner.png");
-	border: 1% solid black;
-	border-radius: 50px;
-	margin: 1%;
-	background-position: center;
-	background-size: cover;
-	font-size: 50px;
-}
-
-#DarkBlue{
-	width: 98%;
-	height: 500px;
-	background-image: url("../img/DarkBlue.jpg");
-	border: 1% solid black;
-	border-radius: 50px;
-	margin: 1%;
-	background-position: center;
-	background-size: cover;
-	font-size: 50px;
-}
-
-#ColorShop{
-	width: 98%;
-	height: 500px;
-	background-image: url("../img/colorshop.png");
-	border: 1% solid black;
-	border-radius: 50px;
-	margin: 1%;
-	background-position: center;
-	background-size: cover;
-	font-size: 50px;
-}
-
-#NewGame{
-	width: 98%;
-	height: 500px;
-	background-image: url("../img/NewGame.png");
-	border: 1% solid black;
-	border-radius: 50px;
-	margin: 1%;
-	background-position: center;
-	background-size: cover;
-	font-size: 50px;
+#aka{
+      font-size: 20px;
 }
 
 

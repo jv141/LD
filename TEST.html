@@ -1,385 +1,402 @@
 <!DOCTYPE html>
+<html lang="en" dir="ltr">
+	<head>
+		<meta charset="utf-8">
+		<link rel="icon" href="img/Lunar_Duck.ico">
+		<title> Lunar Duck - Test </title>
+		<!-- CSS JS POPPER.js jQuerry -->
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+		<link rel="stylesheet" href="css/LunarCSS.css">
+		<script src="https://kit.fontawesome.com/e2ab3c5dad.js"></script>
 
-<html lang="en">
+		<script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+		<!-- EIND -->
 
-<head>
-  <meta charset="UTF-8">
-  		<link rel="icon" href="img/Lunar_Duck.ico">
-  <title>Lunar Duck/TESTING PAGE</title>
+		<style>
+	/* The Modal (background) */
+	.modal {
+	  display: none; /* Hidden by default */
+	  position: fixed; /* Stay in place */
+	  z-index: 1; /* Sit on top */
+	  left: 0;
+	  top: 0;
+	  width: 100%; /* Full width */
+	  height: 100%; /* Full height */
+	}
+	/* Modal Content/Box */
+	.modal-content {
+	  background-color: #061110;
+	  margin: 15% auto; /* 15% from the top and centered */
+	  padding: 20px;
+	  border: 1px solid #888;
+	  width: 80%; /* Could be more or less, depending on screen size */
+	}
 
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+	/* The Close Button */
+	.close {
+	  color: #aaa;
+	  float: right;
+	  font-weight: bold;
+	margin-top: -17px;
+	  font-size: 49px;
+	font-family:LunarFont;
+	background-color: DarkBlue;
 
-  <link rel="stylesheet" href="css/tether.min.css">
-  <link rel="stylesheet" href="css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/LunarCSS.css">
-  <script src="https://kit.fontawesome.com/e2ab3c5dad.js" crossorigin="anonymous"></script>
+	}
 
+	.close:hover,
+	.close:focus {
+	  color: black;
+	  text-decoration: none;
+	  cursor: pointer;
+	}
+	/* Modal Header */
+	.modal-header {
+	  background-color: DarkBlue;
+	  color: white;
+	  display: block;
+	}
 
+	/* Modal Body */
+	.modal-body {padding: 2px 16px;}
 
-  <style>
-/* The Modal (background) */
-.modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  left: 0;
-  top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-}
-/* Modal Content/Box */
-.modal-content {
-  background-color: #fefefe;
-  margin: 15% auto; /* 15% from the top and centered */
-  padding: 20px;
-  border: 1px solid #888;
-  width: 80%; /* Could be more or less, depending on screen size */
-}
+	/* Modal Footer */
+	.modal-footer {
+	  background-color: DarkBlue;
+	  color: white;
+	}
 
-/* The Close Button */
-.close {
-  color: #aaa;
-  float: right;
-  font-weight: bold;
-margin-top: -17px;
-  font-size: 49px;
-font-family:LunarFont;
-background-color: DarkRed;
+	/* Modal Content */
+	.modal-content {
+	  position: relative;
+	  background-color: #060e11;
+	  margin: auto;
+	  padding: 0;
+	  border: 1px solid Black;
+	  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+	  animation-name: animatetop;
+	  animation-duration: 0.4s;
+	  position: absolute;
+	}
 
-}
+	/* Add Animation */
+	@keyframes animatetop {
+	  from {top: -300px; opacity: 0}
+	  to {top: 0; opacity: 1}
+	}
+	.myBtn {
+	display: inline-block;
+	padding: 15px 25px;
+	font-size: 24px;
+	cursor: pointer;
+	text-align: center;
+	text-decoration: none;
+	outline: none;
+	color: #fff;
+	border: none;
+	border-radius: 15px;
+	box-shadow: 0 9px #999;
+	  margin-right:auto;
+	  margin-left:auto;
+	display: block;
+	  background-color: blue;
+	}
 
-.close:hover,
-.close:focus {
-  color: black;
-  text-decoration: none;
-  cursor: pointer;
-}
-/* Modal Header */
-.modal-header {
-  background-color: DarkRed;
-  color: white;
-  display: block;
-}
+	.myBtn:hover {background-color: DarkBlue}
 
-/* Modal Body */
-.modal-body {padding: 2px 16px;}
+	.myBtn:active {
+	background-color: DarkBlue;
+	box-shadow: 0 5px #666;
+	transform: translateY(4px);
+	}
+	  #bob {
+	  color:white;
+	border-radius:  40px;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	font-size: 16px;
+	cursor: url(http://www.rw-designer.com/cursor-extern.php?id=128483),auto;
+	}
+	#bob:hover {
+	padding: 15px 32px;
+	background-color: DarkGrey;
+	color: white;
+	text-align: center;
+	text-decoration: none;
+	font-size: 16px;
+	cursor: url(http://www.rw-designer.com/cursor-extern.php?id=128483),auto;
+	}
+	#bob:active {
+	padding: 15px 32px;
+	background-color: DarkGrey;
+	color: white;
+	text-align: center;
+	text-decoration: none;
+	cursor: url(http://www.rw-designer.com/cursor-extern.php?id=128483),auto;
+	}
 
-/* Modal Footer */
-.modal-footer {
-  background-color: DarkRed;
-  color: white;
-}
+	p{
+	font-family:LunarFont;
+	font-size:20;
+	}
+	h2#henk{
+	background-color: DarkBlue;
+	font-size: 20px;
+	color: white;
+	}
+	.w3-text-green, .w3-hover-text-green:hover{
+	font-family:LuanrFont;
+	}
+	.bob {
+	display: inline-block;
+	border-radius: 25px;
+	background-color: DarkGrey;
+	border: none;
+	color: white;
+	text-align: center;
+	font-size: 28px;
+	padding: 20px;
+	width: 200px;
+	transition: all 0.5s;
+	cursor: url(http://www.rw-designer.com/cursor-extern.php?id=128483),auto;
+	margin: 5px;
+	}
 
-/* Modal Content */
-.modal-content {
-  position: relative;
-  background-color: #100806;
-  margin: auto;
-  padding: 0;
-  border: 1px solid Black;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
-  animation-name: animatetop;
-  animation-duration: 0.4s;
-  position: absolute;
-}
+	.bob span {
+	cursor: url(http://www.rw-designer.com/cursor-extern.php?id=128483),auto;
+	display: inline-block;
+	position: relative;
+	transition: 0.5s;
+	}
 
-/* Add Animation */
-@keyframes animatetop {
-  from {top: -300px; opacity: 0}
-  to {top: 0; opacity: 1}
-}
-.myBtn {
-display: inline-block;
-padding: 15px 25px;
-font-size: 24px;
-cursor: pointer;
-text-align: center;
-text-decoration: none;
-outline: none;
-color: #fff;
-border: none;
-border-radius: 15px;
-box-shadow: 0 9px #999;
-  margin-right:auto;
-  margin-left:auto;
-display: block;
-  background-color: red;
-}
+	.bob span:after {
+	content: '\00bb';
+	position: absolute;
+	opacity: 0;
+	top: 0;
+	right: -20px;
+	transition: 0.5s;
+	}
 
-.myBtn:hover {background-color: DarkRed}
+	.bob:hover span {
+	padding-right: 25px;
+	}
 
-.myBtn:active {
-background-color: DarkRed;
-box-shadow: 0 5px #666;
-transform: translateY(4px);
-}
-  #bob {
-  color:white;
-border-radius:  40px;
-padding: 15px 32px;
-text-align: center;
-text-decoration: none;
-font-size: 16px;
-cursor: url(http://www.rw-designer.com/cursor-extern.php?id=128483),auto;
-}
-#bob:hover {
-padding: 15px 32px;
-background-color: DarkGrey;
-color: white;
-text-align: center;
-text-decoration: none;
-font-size: 16px;
-cursor: url(http://www.rw-designer.com/cursor-extern.php?id=128483),auto;
-}
-#bob:active {
-padding: 15px 32px;
-background-color: DarkGrey;
-color: white;
-text-align: center;
-text-decoration: none;
-cursor: url(http://www.rw-designer.com/cursor-extern.php?id=128483),auto;
-}
-
-p{
-font-family:LunarFont;
-font-size:20;
-}
-h2#henk{
-background-color: DarkRed;
-font-size: 20px;
-color: white;
-}
-.w3-text-green, .w3-hover-text-green:hover{
-font-family:LuanrFont;
-}
-.bob {
-display: inline-block;
-border-radius: 25px;
-background-color: DarkGrey;
-border: none;
-color: white;
-text-align: center;
-font-size: 28px;
-padding: 20px;
-width: 200px;
-transition: all 0.5s;
-cursor: url(http://www.rw-designer.com/cursor-extern.php?id=128483),auto;
-margin: 5px;
-}
-
-.bob span {
-cursor: url(http://www.rw-designer.com/cursor-extern.php?id=128483),auto;
-display: inline-block;
-position: relative;
-transition: 0.5s;
-}
-
-.bob span:after {
-content: '\00bb';
-position: absolute;
-opacity: 0;
-top: 0;
-right: -20px;
-transition: 0.5s;
-}
-
-.bob:hover span {
-padding-right: 25px;
-}
-
-.bob:hover span:after {
-opacity: 1;
-right: 0;
-}
-.bob active{
-background-color: DarkRed;
-}
-  </style>
+	.bob:hover span:after {
+	opacity: 1;
+	right: 0;
+	}
+	.bob active{
+	background-color: DarkBlue;
+	}
+	  </style>
 
 
 
-</head>
-
-  <body>
-    <!-- NAV  -->
-    <ul class="nav justify-content-center">
-      <li class="nav-item">
-        <a class="nav-link" href="index.html">Home</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="info.html">Info</a>
-      </li>
-      <li class="nav-item">
-        <div class="dropdown">
-  <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-    Games
+	</head>
+	<body>
+<!--	NAVIGATIE -->
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="BlueNav">
+  <a class="navbar-brand" href="index.html"><img src="img/Lunar_Duck.ico" id="LunarIcon" alt="LunarDuckIcon"> Lunar Duck</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
   </button>
-  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-    <a class="dropdown-item" href="hexa.html">Hexa</a>
-    <a class="dropdown-item" href="DarkBlue.html">DarkBlue</a>
-    <a class="dropdown-item" href="colorshop.html">Color Shop</a>
-    <div class="dropdown-divider"></div>
-    <a class="dropdown-item" href="https://www.technicpack.net/modpack/lunar-duck.1365273" target="_blank">Minecraft Modpack</a>
-  </div>
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav">
+      <a class="nav-item nav-link" href="index.html" style="color: white;" active> Home </a>
+      <a class="nav-item nav-link" href="info.html" style="color: white;" >Info</a>
+			<div class="dropdown">
+<button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+	Games
+</button>
+<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+	<a class="dropdown-item" href="DarkBlue.html">DarkBlue</a>
+	<a class="dropdown-item" href="colorshop.html">Color Shop</a>
+		<a class="dropdown-item" href="lda.html">Lunar Duck Adventure</a>
+	<div class="dropdown-divider"></div>
+	<a class="dropdown-item" href="https://www.technicpack.net/modpack/lunar-duck.1365273" target="_blank">Minecraft Modpack</a>
 </div>
-      </li>
-    </ul>
-    <!--EIND -->
-
-    <div id="textBlock1">
-        <h1>WELCOME TO THE <del>DANGER</del> TESTING ZONE...</h1>
-          <hr id="whiteline">
-
-
-        THIS IS A W.I.P <br>
-        TESTING .....
-
-
-        <div id="markk">
-          <marquee id="marque"> NEW! TEST TEST 1 2 3 TEST TEST NOT OLD! </marquee>
-        </div>
-
-        <!-- Trigger/Open The Modal -->
-        <button id="myBtn" class="myBtn">Open Lunar Vid Player</button>
-
-        <!-- The Modal -->
-        <div id="myModal" class="modal">
-
-        <!-- Modal content -->
-        <div class="modal-content">
-        <div class="modal-header">
-        <span class="close" title="Close" style="
-        color: black;
-        ">×</span>
-        <font face="sans"><h2 id="henk"  style="text-align: center;" >Lunar Vid Player :P (pause video before closing this thing if you want to stop the music)</h2></font>
-        </div>
-        <div class="modal-body">
-
-        <iframe src="https://www.youtube.com/embed/videoseries?list=PLHNV6EJwXEo6mLx0Gmw_BpqS4XTpRJ0-c" width="100%" height="600px" id="VIDPLAYER"></iframe>
-
-
-        </div>
-
-
-
-
-
-        <div class="modal-footer">
-        <h3></h3>
-        </div>
-        </div>
-        </div>
-
-
-        <script>
-
-        dragElement(document.getElementById("myModal"));
-
-        function dragElement(elmnt) {
-          var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
-          if (document.getElementById(elmnt.id + "header")) {
-            // if present, the header is where you move the DIV from:
-            document.getElementById(elmnt.id + "header").onmousedown = dragMouseDown;
-          } else {
-            // otherwise, move the DIV from anywhere inside the DIV:
-            elmnt.onmousedown = dragMouseDown;
-          }
-
-          function dragMouseDown(e) {
-            e = e || window.event;
-            e.preventDefault();
-            // get the mouse cursor position at startup:
-            pos3 = e.clientX;
-            pos4 = e.clientY;
-            document.onmouseup = closeDragElement;
-            // call a function whenever the cursor moves:
-            document.onmousemove = elementDrag;
-          }
-
-          function elementDrag(e) {
-            e = e || window.event;
-            e.preventDefault();
-            // calculate the new cursor position:
-            pos1 = pos3 - e.clientX;
-            pos2 = pos4 - e.clientY;
-            pos3 = e.clientX;
-            pos4 = e.clientY;
-            // set the element's new position:
-            elmnt.style.top = (elmnt.offsetTop - pos2) + "px";
-            elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
-          }
-
-          function closeDragElement() {
-            // stop moving when mouse button is released:
-            document.onmouseup = null;
-            document.onmousemove = null;
-          }
-        }
-
-        </script>
-
-
-        		<script>
-        		// Get the modal
-        var modal = document.getElementById('myModal');
-
-        // Get the button that opens the modal
-        var btn = document.getElementById("myBtn");
-
-        // Get the <span> element that closes the modal
-        var span = document.getElementsByClassName("close")[0];
-
-        // When the user clicks on the button, open the modal
-        btn.onclick = function() {
-            modal.style.display = "block";
-        }
-
-        // When the user clicks on <span> (x), close the modal
-        span.onclick = function() {
-            modal.style.display = "none";
-        }
-
-        // When the user clicks anywhere outside of the modal, don't close it
-        <!-- window.onclick = function(event) { -->
-            <!-- if (event.target == modal) { -->
-                <!-- modal.style.display = "none"; -->
-            <!-- } -->
-        <!-- } -->
-        		</script>
-
+</div>
     </div>
+  </div>
+</nav>
+<!--	EIND -->
+		<div class="container">
+			<center>
+				<div id="box">
 
-    <div class="clearfix"></div>
-    <footer>
-      <div id="footer1">
+					<h1>WELCOME TO THE <del>DANGER</del> TESTING ZONE...</h1>
 
-          <h1>Info</h1><br>
-          we are beginning devs trying to learn<br>
-          we make games<br>
-          enjoy!
-      </div>
-      <div id="footer2">
+	        THIS IS A W.I.P <br>
+	        TESTING ......
 
 
-      </div>
-      <div id="footer3">
-        <p>
-          <h1>Social</h1><br>
-          <a href="https://discord.gg/rMVxHaa" target="_blank">
-            <i class="fab fa-discord"></i> Discord
-          </a><br>
-          <a href="https://www.instagram.com/thelunarduck/"target="_blank">
-            <i class="fab fa-instagram"></i> Instagram
-          </a><br>
+	        <div id="markk">
+	          <marquee id="marque"> NEW! TEST TEST 1 2 3 TEST TEST NOT OLD! </marquee>
+	        </div>
 
-        </p>
-    </footer>
 
-    <script src="js/jquery-3.2.1.min.js"></script>
-    <script src="js/tether.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/LunarJS.js"></script>
+					<!-- Trigger/Open The Modal -->
+					<button id="myBtn" class="myBtn">Open Lunar Vid Player</button>
 
-  </body>
+					<!-- The Modal -->
+					<div id="myModal" class="modal">
 
+					<!-- Modal content -->
+					<div class="modal-content">
+					<div class="modal-header">
+					<span class="close" title="Close" style="
+					color: black;
+					">×</span>
+					<font face="sans"><h2 id="henk"  style="text-align: center;" >Lunar Vid Player (pause video before closing this thing if you want to stop the music)</h2></font>
+					</div>
+					<div class="modal-body">
+
+					<iframe src="https://www.youtube.com/embed/videoseries?list=PLHNV6EJwXEo6mLx0Gmw_BpqS4XTpRJ0-c" width="100%" height="600px" id="VIDPLAYER"></iframe>
+
+
+					</div>
+
+
+
+
+
+					<div class="modal-footer">
+					<h3></h3>
+					</div>
+					</div>
+					</div>
+
+
+					<script>
+
+					dragElement(document.getElementById("myModal"));
+
+					function dragElement(elmnt) {
+						var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
+						if (document.getElementById(elmnt.id + "header")) {
+							// if present, the header is where you move the DIV from:
+							document.getElementById(elmnt.id + "header").onmousedown = dragMouseDown;
+						} else {
+							// otherwise, move the DIV from anywhere inside the DIV:
+							elmnt.onmousedown = dragMouseDown;
+						}
+
+						function dragMouseDown(e) {
+							e = e || window.event;
+							e.preventDefault();
+							// get the mouse cursor position at startup:
+							pos3 = e.clientX;
+							pos4 = e.clientY;
+							document.onmouseup = closeDragElement;
+							// call a function whenever the cursor moves:
+							document.onmousemove = elementDrag;
+						}
+
+						function elementDrag(e) {
+							e = e || window.event;
+							e.preventDefault();
+							// calculate the new cursor position:
+							pos1 = pos3 - e.clientX;
+							pos2 = pos4 - e.clientY;
+							pos3 = e.clientX;
+							pos4 = e.clientY;
+							// set the element's new position:
+							elmnt.style.top = (elmnt.offsetTop - pos2) + "px";
+							elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
+						}
+
+						function closeDragElement() {
+							// stop moving when mouse button is released:
+							document.onmouseup = null;
+							document.onmousemove = null;
+						}
+					}
+
+					</script>
+
+
+							<script>
+							// Get the modal
+					var modal = document.getElementById('myModal');
+
+					// Get the button that opens the modal
+					var btn = document.getElementById("myBtn");
+
+					// Get the <span> element that closes the modal
+					var span = document.getElementsByClassName("close")[0];
+
+					// When the user clicks on the button, open the modal
+					btn.onclick = function() {
+							modal.style.display = "block";
+					}
+
+					// When the user clicks on <span> (x), close the modal
+					span.onclick = function() {
+							modal.style.display = "none";
+					}
+
+					// When the user clicks anywhere outside of the modal, don't close it
+					<!-- window.onclick = function(event) { -->
+							<!-- if (event.target == modal) { -->
+									<!-- modal.style.display = "none"; -->
+							<!-- } -->
+					<!-- } -->
+							</script>
+							<br>
+
+							<!-- MEER CONTENT HIERO -->
+
+				</div>
+			</center>
+		</div>
+
+		<center>
+
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+
+		<footer>
+			<div id="footer1">
+
+					<h1>Info</h1><br>
+					we are beginning devs trying to learn<br>
+					we make games<br>
+					enjoy!
+			</div>
+			<div id="footer2">
+
+
+			</div>
+			<div id="footer3">
+				<p>
+					<h1>Social</h1><br>
+					<a href="https://discord.gg/rMVxHaa"target="_blank">
+						<i class="fab fa-discord"></i> Discord
+					</a><br>
+					<a href="https://www.instagram.com/thelunarduck/"target="_blank">
+						<i class="fab fa-instagram"></i> Instagram
+					</a><br>
+
+				</p>
+		</footer>
+	</center>
+  <script src="js/LunarJS.js"></script>
+	</body>
 </html>
