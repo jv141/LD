@@ -66,6 +66,21 @@ body{
     filter: drop-shadow(2px 4px 6px black)
   }
 
+  #Hekalou{
+    width: 75%;
+    height: 500px;
+    background-image: url("../img/hekalou.png");
+    border: 1px solid black;
+    border-radius: 50px;
+    margin: 1%;
+    background-position: center;
+    background-size: cover;
+    font-size: 50px;
+    color: white;
+    filter: drop-shadow(2px 4px 6px black)
+  }
+
+
   #ColorShop{
     width: 75%;
   	height: 500px;
