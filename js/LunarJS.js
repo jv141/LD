@@ -43,10 +43,13 @@
       //HERE WHAT WILL HAPPEN
 
 
-  		alert("cheats activated");
+  		alert("GET OUT OF HERE.. CHEATER !!!");
+      alert("go on.. leave");
 
       // XTRA CHEATZ
       		//document.getElementById('ID HIER').innerHTML = 'NEW TEXT;
+
+self.location = "https://www.google.com";
 
       	//	var audio = new Audio('BESTAND.mp3');
       		//audio.play();
