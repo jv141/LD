@@ -26,11 +26,15 @@ a.nav-item nav-link{
 }
 
 body{
-  background-image: url(../img/newbg.jpg);
+  background: #191919
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  color: #b3b3b3;
+}
+h1#White{
+  color: #b3b3b3;
 }
 
 #box{
@@ -66,20 +70,6 @@ body{
     filter: drop-shadow(2px 4px 6px black)
   }
 
-  #Hekalou{
-    height: 500px;
-    background-image: url("../img/hekalou.png");
-    border: 1px solid black;
-    border-radius: 50px;
-    margin: 1%;
-    background-position: center;
-    background-size: cover;
-    font-size: 50px;
-    color: white;
-    filter: drop-shadow(2px 4px 6px black)
-  }
-
-
   #ColorShop{
     width: 75%;
   	height: 500px;
@@ -94,6 +84,19 @@ body{
     filter: drop-shadow(2px 4px 6px black)
   }
 
+  #Hekalou{
+    width: 75%;
+  	height: 500px;
+  	background-image: url("../img/NewBanner.jpg");
+  	border: 1px solid black;
+  	border-radius: 50px;
+  	margin: 1%;
+  	background-position: center;
+  	background-size: cover;
+  	font-size: 50px;
+    color: white;
+    filter: drop-shadow(2px 4px 6px black)
+  }
 
   #BannerLunarDuckLogo{
   	width: 98%;
@@ -198,12 +201,23 @@ div.dropdown-menu{
   text-align: center;
   margin: auto;
   float: left;
+  color: #b3b3b3;
 }
+
+#teamLeft h3,h2{
+  color: #b3b3b3;
+}
+
+#teamRight h3,h2{
+  color: #b3b3b3;
+}
+
 #teamRight {
 
   text-align: center;
   margin: auto;
   overflow: auto;
+  color: #b3b3b3;
 }
 
 #marque{
@@ -216,6 +230,7 @@ div.dropdown-menu{
 #aka{
       font-size: 20px;
 }
+
 
 
 /* SCROLLBAR */
